@@ -1,0 +1,1 @@
+wal -i ~/wallpaper/wallpaper.jpg -n && feh --bg-center ~/wallpaper/wallpaper.jpg
