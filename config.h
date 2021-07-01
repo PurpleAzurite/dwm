@@ -17,7 +17,7 @@ static const char col_urgborder[]   = "#ff0000";
 #include "/home/david/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "V", "VI", "VII", "", "" };
+static const char *tags[] = { "", "", "", "", "", "VI", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -26,8 +26,14 @@ static const Rule rules[] = {
 	 */
 	/* class                instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",               NULL,       NULL,       0,            1,           -1 },
+	{ "Vivaldi-stable",     NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "cantata",            NULL,       NULL,       1 << 2,       0,           -1 },
+	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "LibreOffice",        NULL,       NULL,       1 << 4,       0,           -1 },
+	{ "Gnome-disks",        NULL,       NULL,       1 << 5,       0,           -1 },
+	{ "Ripcord",            NULL,       NULL,       1 << 6,       0,           -1 },
+	{ "KeePassXC",          NULL,       NULL,       1 << 7,       0,           -1 },
 	{ "Firefox",            NULL,       NULL,       1 << 8,       0,           -1 },
-	{ "KeePassXC",          NULL,       NULL,       1 << 7,       1,           -1 },
 };
 
 /* layout(s) */
