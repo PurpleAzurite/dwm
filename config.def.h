@@ -3,7 +3,7 @@
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
-static const unsigned int snap      = 32;       /* snap pixel */
+static const unsigned int snap      = 16;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrains Mono:size=13" };
@@ -17,7 +17,7 @@ static const char col_urgborder[]   = "#ff0000";
 #include "/home/david/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -29,8 +29,6 @@ static const Rule rules[] = {
 	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           -1 },
 	{ "qBittorrent",        NULL,       NULL,       1 << 4,       0,           -1 },
 	{ "Gnome-disks",        NULL,       NULL,       1 << 5,       0,           -1 },
-	{ "Ripcord",            NULL,       NULL,       1 << 6,       0,           -1 },
-	{ "Element",            NULL,       NULL,       1 << 6,       0,           -1 },
 	{ "KeePassXC",          NULL,       NULL,       1 << 7,       0,           -1 },
 };
 
@@ -41,8 +39,8 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "",      tile },    /* first entry is default */
-	{ "",      NULL },    /* no layout function means floating behavior */
+	{ "T",      tile },    /* first entry is default */
+	{ "N",      NULL },    /* no layout function means floating behavior */
 	{ "M",      monocle },
 };
 
