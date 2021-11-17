@@ -17,7 +17,7 @@ static const char col_urgborder[]   = "#ff0000";
 #include "/home/david/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -25,10 +25,9 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                instance    title       tags mask     isfloating   monitor */
-	{ "Brave-browser",      NULL,       NULL,       1 << 2,       0,           -1 },
+	{ "Chromium",           NULL,       NULL,       1 << 2,       0,           -1 },
 	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           -1 },
 	{ "qBittorrent",        NULL,       NULL,       1 << 4,       0,           -1 },
-	{ "Gnome-disks",        NULL,       NULL,       1 << 5,       0,           -1 },
 	{ "KeePassXC",          NULL,       NULL,       1 << 7,       0,           -1 },
 };
 
