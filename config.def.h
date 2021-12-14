@@ -17,7 +17,7 @@ static const char col_urgborder[]   = "#ff0000";
 #include "/home/david/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
-static const char *tags[] = { "", "", "", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -25,10 +25,15 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                instance    title       tags mask     isfloating   monitor */
-	{ "Chromium",           NULL,       NULL,       1 << 2,       0,           -1 },
+	{ "Brave-browser",      NULL,       NULL,       1 << 2,       0,           -1 },
 	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "Steam",              NULL,       NULL,       1 << 3,       0,           -1 },
 	{ "qBittorrent",        NULL,       NULL,       1 << 4,       0,           -1 },
+	{ "Microsoft Teams - Preview",          NULL,       NULL,       1 << 6,       0,           -1 },
 	{ "KeePassXC",          NULL,       NULL,       1 << 7,       0,           -1 },
+	{ "LibreOffice",        NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "libreoffice-startcenter",        NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "libreoffice-calc",        NULL,       NULL,       1 << 1,       0,           -1 },
 };
 
 /* layout(s) */
@@ -66,8 +71,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-	/* { MODKEY,                       XK_i,      incnmaster,     {.i = +1 } }, */
-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
+	//{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
+	//{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_Return, zoom,           {0} },
@@ -84,9 +89,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
-	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
+	//{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
+	//{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
+	//{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
