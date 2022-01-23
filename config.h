@@ -4,6 +4,7 @@
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 10;       /* gaps between windows */
 static const unsigned int snap      = 16;       /* snap pixel */
+static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrains Mono:size=13" };
@@ -24,16 +25,14 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class                instance    title       tags mask     isfloating   monitor */
-	{ "Brave-browser",      NULL,       NULL,       1 << 2,       0,           -1 },
-	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           -1 },
-	{ "Steam",              NULL,       NULL,       1 << 3,       0,           -1 },
-	{ "qBittorrent",        NULL,       NULL,       1 << 4,       0,           -1 },
-	{ "Microsoft Teams - Preview",          NULL,       NULL,       1 << 6,       0,           -1 },
-	{ "KeePassXC",          NULL,       NULL,       1 << 7,       0,           -1 },
-	{ "LibreOffice",        NULL,       NULL,       1 << 1,       0,           -1 },
-	{ "libreoffice-startcenter",        NULL,       NULL,       1 << 1,       0,           -1 },
-	{ "libreoffice-calc",        NULL,       NULL,       1 << 1,       0,           -1 },
+	/* class                instance    title       tags mask     isfloating   istemrinal   noswallow   monitor */
+	{ "Brave-browser",      NULL,       NULL,       1 << 2,       0,           0,           0,          -1 },
+	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           0,           0,          -1 },
+	{ "Steam",              NULL,       NULL,       1 << 3,       0,           0,           0,          -1 },
+	{ "qBittorrent",        NULL,       NULL,       1 << 4,       0,           0,           0,          -1 },
+	{ "KeePassXC",          NULL,       NULL,       1 << 7,       0,           0,           0,          -1 },
+	{ "LibreOffice",        NULL,       NULL,       1 << 1,       0,           0,           0,          -1 },
+    { "st",                 NULL,       NULL,       0,            0,           1,           0,          -1 },
 };
 
 /* layout(s) */
