@@ -26,13 +26,13 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                instance    title       tags mask     isfloating   istemrinal   noswallow   monitor */
-	{ "Brave-browser",      NULL,       NULL,       1 << 2,       0,           0,           0,          -1 },
-	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           0,           0,          -1 },
+	{ "firefox",	        NULL,       NULL,       1 << 2,       0,           0,           0,          -1 },
+	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           0,           1,          -1 },
 	{ "Steam",              NULL,       NULL,       1 << 3,       0,           0,           0,          -1 },
 	{ "qBittorrent",        NULL,       NULL,       1 << 4,       0,           0,           0,          -1 },
 	{ "KeePassXC",          NULL,       NULL,       1 << 7,       0,           0,           0,          -1 },
 	{ "LibreOffice",        NULL,       NULL,       1 << 1,       0,           0,           0,          -1 },
-    { "st",                 NULL,       NULL,       0,            0,           1,           0,          -1 },
+    	{ "st",                 NULL,       NULL,       0,            0,           1,           0,          -1 },
 };
 
 /* layout(s) */
