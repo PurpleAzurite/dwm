@@ -30,6 +30,7 @@ static const Rule rules[] = {
 	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           0,           1,          -1 },
 	{ "Steam",              NULL,       NULL,       1 << 3,       0,           0,           0,          -1 },
 	{ "qBittorrent",        NULL,       NULL,       1 << 4,       0,           0,           0,          -1 },
+	{ "Element",            NULL,       NULL,       1 << 6,       0,           0,           0,          -1 },
 	{ "glowing-bear",       NULL,       NULL,       1 << 6,       0,           0,           0,          -1 },
 	{ "KeePassXC",          NULL,       NULL,       1 << 7,       0,           0,           0,          -1 },
 	{ "LibreOffice",        NULL,       NULL,       1 << 1,       0,           0,           0,          -1 },
