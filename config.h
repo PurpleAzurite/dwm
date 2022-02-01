@@ -35,7 +35,8 @@ static const Rule rules[] = {
 	{ "glowing-bear",       NULL,       NULL,       1 << 6,       0,           0,           0,          -1 },
 	{ "KeePassXC",          NULL,       NULL,       1 << 7,       0,           0,           0,          -1 },
 	{ "LibreOffice",        NULL,       NULL,       1 << 1,       0,           0,           0,          -1 },
-    	{ "st",                 NULL,       NULL,       0,            0,           1,           0,          -1 },
+    { "st",                 NULL,       NULL,       0,            0,           1,           0,          -1 },
+    { "Femboy",             NULL,       NULL,       0,            0,           0,           1,          -1 },
 };
 
 /* layout(s) */
