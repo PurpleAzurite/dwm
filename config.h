@@ -18,7 +18,7 @@ static const char col_urgborder[]   = "#ff0000";
 #include "/home/david/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
-static const char *tags[] = { "", "", "", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "神", "侍", "女", "舞", "狐", "雲", "話", "種", "死" };
 
 static const Rule rules[] = {
 	/* xprop(1):
