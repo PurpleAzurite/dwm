@@ -17,6 +17,14 @@ static const char col_cyan[]        = "#005577";
 static const char col_urgborder[]   = "#ff0000";
 #include "/home/david/.cache/wal/colors-wal-dwm.h"
 
+/* Tab */
+/*   Display modes of the tab bar: never shown, always shown, shown only in  */
+/*   monocle mode in presence of several windows.                            */
+/*   A mode can be disabled by moving it after the showtab_nmodes end marker */
+enum showtab_modes { showtab_never, showtab_auto, showtab_nmodes, showtab_always};
+static const int showtab            = showtab_auto; /* Default tab bar show mode  */
+static const Bool toptab            = True;         /* False means bottom tab bar */
+
 /* tagging */
 static const char *tags[] = { "", "", "", "4", "5", "6", "7", "8", "9" };
 
