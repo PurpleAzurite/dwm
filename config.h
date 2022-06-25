@@ -36,6 +36,7 @@ static const Rule rules[] = {
 	/* class                instance    title       tags mask     isfloating   istemrinal   noswallow   monitor */
 	{ "LibreWolf",          NULL,       NULL,       1 << 2,       0,           0,           0,          -1 },
 	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           0,           1,          -1 },
+	{ "Spotify",            NULL,       NULL,       1 << 3,       0,           0,           0,          -1 },
 	{ "Steam",              NULL,       NULL,       1 << 3,       0,           0,           0,          -1 },
 	{ "qBittorrent",        NULL,       NULL,       1 << 4,       0,           0,           0,          -1 },
 	{ "Element",            NULL,       NULL,       1 << 6,       0,           0,           0,          -1 },
