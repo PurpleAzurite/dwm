@@ -34,7 +34,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                instance    title       tags mask     isfloating   istemrinal   noswallow   monitor */
-	{ "LibreWolf",          NULL,       NULL,       1 << 2,       0,           0,           0,          -1 },
+	{ "librewolf",          NULL,       NULL,       1 << 2,       0,           0,           0,          -1 },
 	{ "Hydrus Client",      NULL,       NULL,       1 << 3,       0,           0,           1,          -1 },
 	{ "Spotify",            NULL,       NULL,       1 << 3,       0,           0,           0,          -1 },
 	{ "Steam",              NULL,       NULL,       1 << 3,       0,           0,           0,          -1 },
