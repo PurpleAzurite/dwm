@@ -15,7 +15,7 @@ static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char col_urgborder[]   = "#ff0000";
-#include "/home/david/.cache/wal/colors-wal-dwm.h"
+#include "/home/soda/.cache/wal/colors-wal-dwm.h"
 
 /* Tab */
 /*   Display modes of the tab bar: never shown, always shown, shown only in  */
@@ -43,7 +43,7 @@ static const Rule rules[] = {
 	{ "glowing-bear",       NULL,       NULL,       1 << 6,       0,           0,           0,          -1 },
 	{ "KeePassXC",          NULL,       NULL,       1 << 7,       0,           0,           0,          -1 },
 	{ "LibreOffice",        NULL,       NULL,       1 << 1,       0,           0,           1,          -1 },
-    { "st",                 NULL,       NULL,       0,            0,           1,           0,          -1 },
+   	{ "st",                 NULL,       NULL,       0,            0,           1,           0,          -1 },
 };
 
 /* layout(s) */
